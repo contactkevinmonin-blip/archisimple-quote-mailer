@@ -1,0 +1,31 @@
+{
+  "name": "archisimple-quote-mailer",
+  "version": "1.0.0",
+  "description": "Microservice d'envoi automatique de devis personnalisé par email (API Gmail) suite à la soumission du formulaire ArchiSimple et synchronisation HubSpot CRM",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test-quote": "node src/scripts/send-test-quote.js",
+    "preview": "node src/scripts/preview-quote.js"
+  },
+  "keywords": [
+    "archisimple",
+    "devis",
+    "email",
+    "gmail-api",
+    "hubspot",
+    "renovation",
+    "mar",
+    "dpe"
+  ],
+  "author": "ArchiSimple Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0"
+  }
+}
