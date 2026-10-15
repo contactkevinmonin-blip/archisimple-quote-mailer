@@ -8,7 +8,7 @@ export function generateQuoteEmail(quote) {
 
   const fmt = (num) => (num || 0).toLocaleString('fr-FR');
 
-  const subject = `Votre estimation de rénovation ArchiSimple #${quoteReference} · ${client.city} (${client.surface} m²)`;
+  const subject = `Votre estimation ArchiSimple - Devis ${quoteReference} (${client.city})`;
 
   const html = `<!DOCTYPE html>
 <html lang="fr">
@@ -241,8 +241,8 @@ export function generateQuoteEmail(quote) {
           <!-- Pied de Page Email -->
           <tr>
             <td style="padding:20px 32px;background-color:#F5F4F0;border-top:1px solid #E5E0D8;font-size:11px;color:#8F8B82;text-align:center;line-height:1.6;">
-              <strong>ArchiSimple SAS</strong> · Plateforme de mise en relation sécurisée pour la rénovation énergétique sous séquestre bancaire ACPR.<br>
-              Paris · Lyon · Marseille · Tél. commercial : 01 80 90 20 26 · contact@archisimple.fr<br>
+              <strong>ArchiSimple</strong> · Plateforme de rénovation énergétique sous tiers de confiance &amp; séquestre bancaire.<br>
+              Paris · Lyon · Marseille · Tél. : 01 80 90 20 26 · archisimple13@gmail.com<br>
               <span style="font-size:10px;color:#ABA79F;">Ce message automatique vous est envoyé suite à votre demande de devis sur notre formulaire.</span>
             </td>
           </tr>

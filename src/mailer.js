@@ -74,7 +74,8 @@ export async function sendQuoteEmail({ to, subject, html, text, quoteReference =
       });
 
       const info = await transporter.sendMail({
-        from: `"ArchiSimple Rénovation" <${gmailUser}>`,
+        from: `"ArchiSimple" <${gmailUser}>`,
+        replyTo: gmailUser,
         to,
         subject,
         html,
