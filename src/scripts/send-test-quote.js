@@ -11,7 +11,7 @@ async function run() {
   const testLead = {
     firstname: 'Kevin',
     lastname: 'Monin',
-    email: 'contact.kevinmonin@gmail.com',
+    email: 'archisimple13@gmail.com',
     phone: '06 12 34 56 78',
     postalCode: '13006',
     city: 'Marseille',
